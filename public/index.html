@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>VPNflix</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><img class="logo" src="https://fontmeme.com/permalink/201210/44c6155df1787596887a757cc8e0d8e5.png" alt="netflix-font" border="0"></a>
+            <a class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </a>
+            <div class="nav-links">    
+                <ul class="menu-links">
+                    <li><a class="menu-link-1" href="#">Home</a></li>
+                    <li><a class="menu-link-2" href="#faqs">FAQs</a></li>
+                    <li><a class="menu-link-3" href="mailto:?subject=test%20email">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="home" class="grid grid-search">  
+        <ul class="instructions">
+            <li class="inst-ctr">
+                <i class="fas fa-search"></i>
+                <h1 class="instr">1. Search for movies in different regions</h1>
+            </li>
+            <li class="inst-ctr">
+                <i class="fas fa-plus"></i>
+                <h1 class="instr">2. Add your favourites to a Watch List</h1>
+            </li>
+            <li class="inst-ctr">
+                <i class="fas fa-globe-europe"></i>
+                <h1 class="instr">3. Set your VPN to appropriate country</h1>
+            </li>
+            <li class="inst-ctr">
+                <i class="fas fa-tv"></i>
+                <h1 class="instr">4. Log into netflix and enjoy...</h1>
+            </li>
+            
+            
+            
+        </ul> 
+        <div class="search">
+            <input class="search-input" type="text" placeholder="Enter a movie title">
+            <button class="search-btn" type="submit" onclick="movieSearch()">SEARCH</button>
+        </div>
+        <!--<div class="loader-ctr"></div>-->
+    </section>
+    <section class="grid grid-results">
+        <div class="result-title"></div> 
+        <div class="results">
+    
+        </div>
+    </section>
+    <section class="grid grid-favs">
+        <div class="favourites-title"></div>
+        <div class="favourites">
+            
+        </div>
+    </section>
+    <section id="faqs" class="grid grid-faqs">
+        <div class="faq-ctr">
+            <h1 class="faq-title">Frequently Asked Questions</h1>
+            <ul class="faq-list">
+                <li>
+                    <button class="faq-question" onclick="faqClick(event)">What is a VPN? <span class="faq-plus closed" onclick="spanClick(event)">+</span></button>
+                    <div class="faq-answer closed">
+                        <span>A VPN allows you to change your IP address so that you appear to be located in a different country.</span>
+                    </div>
+                </li>
+                <li>
+                    <button class="faq-question" onclick="faqClick(event)">Netflix won't allow me access when I'm connected to my VPN? <span class="faq-plus closed" onclick="spanClick(event)">+</span></button>
+                    <div class="faq-answer closed">
+                        <span>Unfortunately, some VPN's servers are known to Netflix and they block them from accessing their site. Contact your VPN provider as they will often change the location of their servers to avoid this problem. Alternatively try a different VPN provider.</span>
+                    </div>
+                </li>
+                <li>
+                    <button class="faq-question" onclick="faqClick(event)">I've set up my VPN, but Netflix's content is still from my actual country? <span class="faq-plus closed" onclick="spanClick(event)">+</span></button>
+                    <div class="faq-answer closed">
+                        <span>Try logging out of your account and then clearing the cookies in your browser. Now, while still connected to your VPN go to Netflix and login again. This often solves the problem as the previously stored cookies contained data with your actual location.</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+    <footer class="grid grid-footer">
+        <div class="footer-ctr">
+            <ul>
+                
+                <li class="footer-item"><a href="">Contact Us</a></li>
+                <li class="footer-item"><a href="https://duckduckgo.com/?q=internet+speed+tester&t=chromentp&ia=web" target="_blank">Speed Test</a></li>
+                <li class="footer-item"><a href="#home">Top</a></li>
+            </ul>
+        </div>
+    </footer>
+  </body>
+</html>
